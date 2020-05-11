@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfPlayground4.UI;
 
 namespace WpfPlayground4
 {
@@ -22,6 +23,13 @@ namespace WpfPlayground4
 		public MainWindow()
 		{
 			InitializeComponent();
+		}
+
+		private void OpenUploadForm_OnClick(object sender, RoutedEventArgs e)
+		{
+			var win = new UdUploadForm();
+
+			win.Show();
 		}
 	}
 }

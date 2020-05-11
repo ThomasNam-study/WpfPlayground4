@@ -66,6 +66,21 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Packet\BasePacket.cs" />
+    <Compile Include="Packet\BinaryPacket.cs" />
+    <Compile Include="Packet\BinaryPacketImp.cs" />
+    <Compile Include="Packet\CommonPacketImp.cs" />
+    <Compile Include="Packet\KeyValuePacket.cs" />
+    <Compile Include="Packet\KeyValuePacketImp.cs" />
+    <Compile Include="Packet\NonePacket.cs" />
+    <Compile Include="Packet\NonePacketImp.cs" />
+    <Compile Include="Packet\PacketCommandType.cs" />
+    <Compile Include="Packet\PacketDataType.cs" />
+    <Compile Include="Packet\PacketFactory.cs" />
+    <Compile Include="Packet\PacketHeader.cs" />
+    <Compile Include="Packet\PacketSuccessType.cs" />
+    <Compile Include="Packet\XmlPacket.cs" />
+    <Compile Include="Packet\XmlPacketImp.cs" />
     <Compile Include="Resolver.cs" />
     <Compile Include="UI\UdUploadForm.xaml.cs">
       <DependentUpon>UdUploadForm.xaml</DependentUpon>
@@ -112,7 +127,11 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Model\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
