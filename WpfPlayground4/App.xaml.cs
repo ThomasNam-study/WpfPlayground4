@@ -12,5 +12,15 @@ namespace WpfPlayground4
 	/// </summary>
 	public partial class App : Application
 	{
+		private Bootstrapper bootstrapper;
+
+		public App()
+		{
+			ShutdownMode = ShutdownMode.OnMainWindowClose;
+
+			bootstrapper = new Bootstrapper();
+
+			// var config = Resolver.Resolve<ConfigVm>();
+		}
 	}
 }
